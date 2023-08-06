@@ -10,7 +10,6 @@
   font-weight: 400;
 }
 
-
 body {
   background: -webkit-linear-gradient(#001, #000, #001, #000);
   animation: body 0.50s ease-in-out normal;
@@ -101,6 +100,15 @@ a{
 a{
   font-size: 16px;
 }
+.card button{
+  height: 25px;
+  background: none;
+  border: 2px darkviolet solid;
+  border-radius: 2px;
+  color: darkviolet;
+  width: 80px;
+  margin-top: 15px;
+}
 
   .landing img {
     width: 400px;
@@ -122,15 +130,6 @@ a{
   }
 } 
 
-.card button{
-  height: 25px;
-  margin-top: 15px;
-  background: none;
-  border: 2px darkviolet solid;
-  border-radius: 2px;
-  color: darkviolet;
-  width: 80px;
-}
 .about img{
   width: 152px;
 }
@@ -540,17 +539,17 @@ img {
 
 /* Position the "next button" to the right */
 .next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
+  right: 0;
+  border-radius: 3px 0 0 3px;
     cursor: pointer;
     height: 15px;
     width: 15px;
     margin: 0 2px;
     border-radius: 50%;
     display: inline-block;
-    position: absolute;
     transition: background-color 0.6s ease;
     }
+  
     .active,
     .dot:hover {
       background-color: #717171;
@@ -566,16 +565,15 @@ img {
   height: 10px;
   width: 10px;
   margin: 0 2px;
-  background-color:none;
+  background-color: #bbb;
   border-radius: 50%;
   position: relative;
-  border: 2px darkviolet solid;
   display: inline-block;
   transition: background-color 0.6s ease;
 }
 
 .active, .dot:hover {
-  background-color:darkviolet;
+  background-color: #717171;
 }
 
 /* Fading animation */
@@ -619,49 +617,41 @@ textarea{
   margin-top: 10px;
   border-radius: 2px;
 }
-
 .button-76{
   background-color: #cf245f;
-  background-image: linear-gradient(to bottom right, darkviolet, #7700ff,#4400c4);
+  background-image: linear-gradient(to bottom right, darkviolet, blueviolet, #7700ff);
   border: 0;
-  border-radius: 5px;
+  border-radius: .25rem;
   width: 100px;
+  box-sizing: border-box;
   color: #fff;
   cursor: pointer;
-  font-size: 14px;
-  user-select: none;
+  font-size: 14px; /* 18px */
   font-weight: 600;
-  padding: 7px;
+  line-height: 0.75rem; /* 28px */
   text-align: center;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
   margin-top: 10px;
+  padding: 10px;
 }
 
 .button-76:hover {
   box-shadow: none;
 }
 
-/* contact */
-.contact{
-  place-items: center;
-  display: grid;
-  margin-top: 30vh
+@media (min-width: 1024px) {
+  .button-76 {
+    font-size: 1.5rem; /* 24px */
+    padding: 1rem 1.5rem;
+    line-height: 2rem; /* 32px */
+  }
 }
-.contact a:hover{
-  background: none;
-}
-#a:hover{
-  background: none;
-}
-
 button{
   background: none;
   border: 2px darkviolet solid;
 }
-option{
-  background: #000;
-}
-.button-76:hover{
-  background-image: linear-gradient(to bottom right, darkviolet, #7700ff,#4400c4);
-  color: #fff;
-  transform: skew(7deg);
+#a:hover{
+  background: none;
 }
