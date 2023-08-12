@@ -1,6 +1,6 @@
- @import url('https://fonts.googleapis.com/css2?family=Almarai:wght@700&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=REM&display=swap');
 * {
-  font-family: 'Almarai', sans-serif;
+  font-family: 'REM', sans-serif;
   align-items: center;
   margin: 0;
   text-decoration: none;
@@ -9,6 +9,8 @@
   color: #fff;
   font-weight: 400;
 }
+
+
 body {
   background: -webkit-linear-gradient(#001, #000, #001, #000);
   animation: body 0.50s ease-in-out normal;
@@ -666,4 +668,4 @@ button{
 }
 #a:hover{
   background: none;
-}
+	}
