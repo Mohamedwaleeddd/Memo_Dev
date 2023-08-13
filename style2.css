@@ -9,7 +9,6 @@
   color: #fff;
   font-weight: 400;
 }
-
 body {
   background: -webkit-linear-gradient(#001, #000, #001, #000);
   animation: body 0.50s ease-in-out normal;
@@ -81,7 +80,14 @@ a{
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }
-
+@keyframes sb{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
 .hover-underline-animation:hover::after {
   transform: scaleX(1);
   background: #7700ff;
@@ -162,15 +168,17 @@ button:hover {
 .sb {
   display: none;
   bottom: 0;
-  width: 100%;
+  animation: sb 2s ease-in-out normal;
+  width: 200px;
   height: 100vh;
   position: fixed;
-  backdrop-filter: blur(80px);
+  background: #001;
   z-index: 99999;
-  
 }
 .sb img{
+  width: 150px;
   border-radius: 5px;
+  animation: sb 2s ease-in-out normal;
 }
 #show {
   position: absolute;
@@ -226,7 +234,7 @@ display: none;
   }
 }
 .sb img{
-  border: 1.60px #7700ff solid;
+  width: 150px;
 }
 .skills{
   align-items: center;
@@ -667,4 +675,7 @@ button{
 }
 #a:hover{
   background: none;
+}
+svg:hover{
+  fill: #fff
 	}
